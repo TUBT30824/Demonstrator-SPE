@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="type1" vClass="passenger" accel="1.7" mass="1138" decel="4.5" sigma="0.5" length="4.074" width="1.751" minGap="2.5" maxSpeed="47.5" emissionClass="HBEFA4/PC_petrol_Euro-6d" guiShape="passenger/hatchback" color="1,0,0"/>
+    <vType id="type2" vClass="passenger" accel="2.7" mass="1430" decel="4.5" sigma="0.5" length="4.505" width="1.816" minGap="2.5" maxSpeed="58.3" emissionClass="HBEFA4/PC_diesel_Euro-6d" guiShape="passenger/sedan" color="0,1,0"/>
+    <vType id="type3" vClass="passenger" accel="4.9" mass="2125" decel="4.5" sigma="0.5" length="4.783" width="1.852" minGap="2.5" maxSpeed="52.7" emissionClass="HBEFA4/PC_BEV" guiShape="passenger/sedan" color="0,0,1">
+        <param key="has.battery.device" value="true"/>
+    </vType>
+    <vType id="type4" vClass="delivery" accel="1.1" mass="2142" decel="4.5" sigma="0.5" length="5.932" width="2.331" minGap="2.5" maxSpeed="41.6" emissionClass="HBEFA4/LCV_diesel_N1-III_Euro-6d" guiShape="delivery" color="0,1,1"/>
+    <vType id="type0" vClass="emergency" accel="1.7" mass="2142" decel="4.5" sigma="0.5" length="5.932" width="2.331" minGap="2.5" maxSpeed="41.6" emissionClass="HBEFA4/LCV_diesel_N1-III_Euro-6d" guiShape="emergency" color="1,0,1">
+        <param key="has.bluelight.device" value="true"/>
+    </vType>
+    <route id="emergency_start" edges="C4B4 B5C5" />
+
+</routes>
